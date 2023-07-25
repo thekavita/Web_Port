@@ -1,0 +1,166 @@
+/*    font-family: 'Arvo', serif;
+font-family: 'Lobster Two', cursive;
+font-family: 'Roboto Slab', serif;
+font-family: 'Source Serif Pro', serif; */
+ * {
+  box-sizing: border-box;
+  margin-left: 10px;
+  font-family: 'Poppins',sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arvo';
+  cursor: pointer;
+  background-color:#095a55;
+  
+  
+}
+
+#hero {
+  background-color: #fff;
+  background-image: url(bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* changed from 'left' to 'flex-start' */
+  text-align: left;
+  color: #000000;
+  
+  
+}
+
+#hero h1 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  float: left;
+  text-align: left; /* redundant since 'float: left' has already aligned it to the left */
+  clear: left; /* added to clear the float */
+  text-shadow: 4px 4px 8px rgba(149, 192, 190, 0.5);
+  margin-left: 20px;
+}
+
+#hero h1  {
+  font-size: 4rem; /* moved from the previous rule to this new one */
+  color: #000000;
+  text-shadow: 4px 4px 10px rgba(8, 209, 192, 0.5);
+  position: relative;
+  display: inline-block;
+
+}
+
+#hero p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 20px;
+}
+
+
+#hero a {
+  display: block;
+  padding: 1rem 2rem;
+  background-color: #000000;
+  color: #333;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+  margin-left: 20px;
+
+}
+
+#hero a:hover {
+  transform: scale(1.1);
+}
+
+.about {
+  background-color: #fff;
+}
+
+.about-section {
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+.about-section h2 {
+  color: #fff;
+  font-size: large;
+}
+.about-section p {
+  color: #fff;
+}
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-left: -10%;
+ 
+}
+
+.skill {
+  width: 200px;
+  text-align: center;
+}
+
+.skill img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.skill-name {
+  font-weight: bold;
+  color: #000000;
+}
+.skillsHeading{
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* Adjust font sizes for smaller screens */
+  #hero h1 {
+    font-size: 3.5rem;
+  }
+
+  #hero h1 span {
+    font-size: 3rem;
+  }
+
+  #hero p {
+    font-size: 1.5rem;
+  }
+
+  #hero a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further adjustments for even smaller screens */
+  #hero h1 {
+    font-size: 2.5rem;
+  }
+
+  #hero h1 span {
+    font-size: 2rem;
+  }
+
+  #hero p {
+    font-size: 1.2rem;
+  }
+
+  #hero a {
+    font-size: 1rem;
+  }
+}
